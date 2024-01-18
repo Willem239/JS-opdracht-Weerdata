@@ -12,7 +12,7 @@ header {
 
 .controls {
   background-color: rgb(146, 192, 230);
-  color: black;
+  color: black;   
   padding: 10px;
   display: flex;
   flex-direction: column;
