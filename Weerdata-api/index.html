@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weer Visie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="map.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="cache.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Weer Visie</h1>
+  </header>
+  <div class="controls">
+    <div class="input-container">
+      <input type="text" id="location" placeholder="Typ een plaatsnaam" />
+      <button id="clearInput" class="clear-input">&times;</button>
+    </div>
+    <div class="forecast-buttons">
+      <input type="radio" id="today" name="forecast" value="today" checked>
+      <label for="today">Vandaag</label>
+      <input type="radio" id="fiveDays" name="forecast" value="fiveDays">
+      <label for="fiveDays">Komende 5 dagen</label>
+    </div>
+    <div class="toggle-buttons">
+      <input type="checkbox" id="temperature" checked>
+      <label for="temperature">Temperatuur</label>
+      <input type="checkbox" id="precipitation" checked>
+      <label for="precipitation">Neerslag</label>
+      <input type="checkbox" id="wind">
+      <label for="wind">Wind</label>
+      <input type="checkbox" id="humidity">
+      <label for="humidity">Luchtvochtigheid</label>
+    </div>
+  </div>
+  <div id="weatherData"></div>
+  <div id="mapContainer">
+    <div id="map"></div>
+  </div>
+</body>
+</html>
+
+

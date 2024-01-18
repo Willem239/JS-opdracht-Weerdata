@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(146, 192, 230);
+  font-family: Arial, sans-serif;
+  
+}
+
+header {
+  background-color: rgb(146, 192, 230);
+  padding: 10px;
+  text-align: center;
+}
+
+.controls {
+  background-color: rgb(146, 192, 230);
+  color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  width: 200px;
+}
+
+#clearInput {
+  position: absolute;
+  right: -5px;
+  top: 28%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#location {
+  width: 200px;
+  height: 27px;
+  border-radius: 3px;
+  margin-bottom: 25px;
+}
+
+.forecast-buttons,
+.toggle-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.forecast-button,
+.toggle-button {
+  background-color: white;
+  color: blue;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.forecast-button.active,
+.toggle-button.active {
+  background-color: lightblue;
+}
+
+#weatherData {
+  background-color: rgb(146, 192, 230);
+  font-size: 13px;
+  width: 980px;
+  margin: 0 auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.days-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.day {
+  width: calc(20% - 8px);
+  margin-bottom: 10px;
+  padding: 7px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#mapContainer {
+  width: 980px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -14%);  /* Center content horizontally en Verticaly */
+  margin-top: 150px;
+}
+
+#map {
+  width: 980px;
+  height: 350px; 
+
+}
+
+.temp { 
+  position: relative;
+  top: 20px;  /* Hiermee kan je de temperatuur naar boven verplaatsen*/
+  left: 8px;  /*Hiermee kan je de temperatuur naar rechts verplaatsen*/
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(53, 15, 187);
+}
