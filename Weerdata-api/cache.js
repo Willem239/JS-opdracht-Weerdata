@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       
         clearCache() {
-          this.cache.clear();
+          this.cache.clear(); 
+          
         }
       }
       
